@@ -1,5 +1,4 @@
-const initialState = {
-    data:[{
+const initialState = [{
         id: 1,
         url: "https://media0.giphy.com/media/LRsMaCckjrvJdQLn7w/giphy.gif?cid=4e4f4969pm8j3tcs91cmgmujseh757hwsle7p948idjenup0&rid=giphy.gif&ct=g"
       },
@@ -24,8 +23,6 @@ const initialState = {
         url: "https://media0.giphy.com/media/LRsMaCckjrvJdQLn7w/giphy.gif?cid=4e4f4969pm8j3tcs91cmgmujseh757hwsle7p948idjenup0&rid=giphy.gif&ct=g"
       },
     ]
-}
-
 const gifReducer = (state = initialState,action) =>{
     return state;
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import PropTypes from "prop-types"
+
 function Home(props) {
     const {gifs} = props;
 
@@ -17,8 +19,11 @@ function Home(props) {
 }
 const mapStateToProps = (state) => {
     return {
-        gifs: state.gif.data
+        gifs: state.gif
     }
 }
+Home.propTypes = {
+    gifs: PropTypes.object,
+  };
 
 export default connect(mapStateToProps)(Home)
