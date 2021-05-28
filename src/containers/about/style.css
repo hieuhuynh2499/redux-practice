@@ -1,0 +1,41 @@
+.about__form{
+    margin:0 auto; 
+    width: 300px;
+}
+.about__form input{
+    width: 210px;
+    height:20px;
+    border:1px solid #000;
+}
+.about__form button{
+    height:25px;
+    width: 70px;
+    text-transform: capitalize;
+    background-color:rgb(31, 145, 221);
+    outline: none;border: none;
+    margin-left: 10px;
+}
+h1{
+    text-align:center;
+    text-transform: uppercase;
+}
+.about__list{
+    width: 300px;
+    margin:10px auto;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.about__list li{
+    display:flex;
+    background-color:rgb(31, 145, 221);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.about__list li div{
+    margin-left: 80px;
+}
+.about__list li div span{
+    margin-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
