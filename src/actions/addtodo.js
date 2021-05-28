@@ -1,15 +1,15 @@
 import {ADD_FAILED,ADD_SUCCESS,ADD_REQUEST} from '../contants'
-export const addRequest = (todo) => {
+export const addRequest = (payload) => {
     return {
       type: ADD_REQUEST,
-      payload:todo
+      payload,
     };
   };
 
-  export const addSuccess = (todo) => {
+  export const addSuccess = (payload) => {
     return {
       type: ADD_SUCCESS,
-      payload:todo
+      payload,
     };
   };
   export const addFaild = () => {

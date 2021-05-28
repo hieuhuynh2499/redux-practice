@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import './style.css'
 import {connect} from 'react-redux'
@@ -64,14 +65,11 @@ const mapStateToProps = (state) => {
         list: state.list
     }
 }
-const mapDispatchToProps = (dispatch) =>{
-    return {
-        getList: () => dispatch(listRequest()),
-        addTodo: (todo) => dispatch(addRequest(todo)),
-        removeTodo: (id) => dispatch(deleteRequest(id)),
-        editTodo: (todo) => dispatch(editRequest(todo)),
-    }
-}
+const mapDispatchToProps = (dispatch) =>
+    ({getList: () => dispatch(listRequest()),
+    addTodo: todo => dispatch(addRequest(todo)),
+    removeTodo: id => dispatch(deleteRequest(id)),
+    editTodo: todo => dispatch(editRequest(todo)),})
 About.propTypes = {
     list: PropTypes.array,
     getList: PropTypes.func,
