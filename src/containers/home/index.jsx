@@ -23,7 +23,7 @@ const mapStateToProps = (state) => {
     }
 }
 Home.propTypes = {
-    gifs: PropTypes.object,
+    gifs: PropTypes.array,
   };
 
 export default connect(mapStateToProps)(Home)
